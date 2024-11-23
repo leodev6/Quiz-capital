@@ -1,0 +1,115 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>World Capitals Quiz</title>
+  <style></style>
+</head>
+
+<body>
+  <button class="language-toggle" onclick="toggleLanguage()">FR/EN</button>
+  <div class="landing-container active" id="landingContainer">
+    <div class="header">
+      <h1>Welcome to World Capitals Quiz</h1>
+    </div>
+    <div class="description">
+      <p>
+        Test your knowledge of world capitals through this interactive and
+        educational quiz!
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <i class="feature-icon">🌍</i>
+          <h3>Quiz by Continent</h3>
+          <p>
+            Choose from 5 continents: Europe, Asia, Africa, Americas and
+            Oceania.
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="feature-icon">🎯</i>
+          <h3>Test Your Knowledge</h3>
+          <p>Identify capitals from country flags.</p>
+        </div>
+
+        <div class="feature">
+          <i class="feature-icon">📊</i>
+          <h3>Track Your Progress</h3>
+          <p>Get real-time scoring and detailed answer summary.</p>
+        </div>
+      </div>
+
+      <button class="start-btn" id="startQuizBtn">Start Quiz</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="continent-selection" id="continentSelection">
+      <div class="header">
+        <h1>Choose a Continent</h1>
+      </div>
+      <div class="continent-options">
+        <button class="continent-option" data-continent="europe">
+          Europe
+        </button>
+        <button class="continent-option" data-continent="asia">Asia</button>
+        <button class="continent-option" data-continent="africa">
+          Africa
+        </button>
+        <button class="continent-option" data-continent="americas">
+          Americas
+        </button>
+        <button class="continent-option" data-continent="oceania">
+          Oceania
+        </button>
+      </div>
+      <button class="back-btn" id="backToHomeBtn">Back to Home</button>
+    </div>
+
+    <div class="difficulty-selection" id="difficultySelection">
+      <div class="header">
+        <h1>Choose a Level</h1>
+      </div>
+      <div class="difficulty-options">
+        <button class="difficulty-option" data-level="level1">Level 1</button>
+        <button class="difficulty-option" data-level="level2">Level 2</button>
+        <button class="difficulty-option" data-level="level3">Level 3</button>
+        <button class="difficulty-option" data-level="level4">Level 4</button>
+      </div>
+      <button class="back-btn" id="backToContinentsBtn">
+        Back to Continents
+      </button>
+    </div>
+
+    <div class="quiz-container" id="quizContainer">
+      <div class="header">
+        <h1>World Capitals Quiz</h1>
+        <div class="score">Score: <span id="score">0</span></div>
+      </div>
+
+      <div class="flag-container">
+        <img id="flag" class="flag" alt="Country flag" src="" width="300" height="200" />
+      </div>
+
+      <div class="options" id="options"></div>
+
+      <button class="next-btn" id="nextBtn">Next Question</button>
+      <button class="back-btn" id="backBtn">Back to Continents</button>
+    </div>
+
+    <div class="results-container" id="resultsContainer">
+      <div class="result-header">
+        <h1>Quiz Results</h1>
+        <div class="final-score">Score: <span id="finalScore">0</span></div>
+      </div>
+      <div id="resultsContent"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
