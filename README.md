@@ -1,0 +1,3 @@
+Welcome to our interactive quiz platform, where you can test your knowledge on a variety of themes such as history, computer science, and much more. Choose your favorite subject and dive into a series of challenging questions. For each question, you will have four possible answers, but be careful: once you make your choice, you cannot go back!
+
+At the end of the quiz, discover your results with a diagram illustrating your correct and incorrect answers, allowing you to visualize your performance. If you want to improve your score, feel free to retake the quiz as many times as you wish. Enhance your skills while having fun!
